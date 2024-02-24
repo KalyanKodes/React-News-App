@@ -63,7 +63,8 @@ function App(){
                 <ul>
                     <li onClick={()=>setQuery("cricket")}>Cricket</li>
                     <li onClick={()=>setQuery('politics')}>Politics</li>
-                    <li onClick={()=>setQuery('latest')}>Latest</li>
+                    <li onClick={()=>setQuery('latest')}>Latest</li>adsfad
+    
                 </ul>
             </header>
 
