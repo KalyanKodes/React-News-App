@@ -11,11 +11,11 @@ function Article({imageToUrl , title , author , description , publishedAt , link
         <div className="article">
             <img src={imageToUrl} alt="Not Found" />
             <div className="title">
-                <h1>{title}</h1>
+                <h3>{title}</h3>
             </div>
-            <p><b>Author</b>: {author}</p>
-            <p className="description"><b>Description</b>: {description}</p>
-            <p><b>Published Date</b>: {publishedAt}</p>
+            <p><i>Author</i>: {author}</p>
+            <p className="description"><i>Description</i>: {description}</p>
+            <p><i>Published Date</i>: {publishedAt}</p>
             <a href={link}>More Info</a>
         </div>
     )
@@ -63,8 +63,7 @@ function App(){
                 <ul>
                     <li onClick={()=>setQuery("cricket")}>Cricket</li>
                     <li onClick={()=>setQuery('politics')}>Politics</li>
-                    <li onClick={()=>setQuery('latest')}>Latest</li>adsfad
-    
+                    <li onClick={()=>setQuery('latest')}>Latest</li>
                 </ul>
             </header>
 
