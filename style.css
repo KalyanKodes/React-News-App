@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    color: #FFF;
+    width: 100%;
+}
+
+header h2{
+    text-align: center;
+    background-color: #333333;
+    padding: 20px;
+}
+
+
+header ul{
+    background-color: #555555;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+li{
+    cursor: pointer;
+}
+form{
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type = "text"]{
+    min-width: 200px;
+    width: 200px;
+}
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    /* max-height: 500px; */
+    /* height: 500px; */
+}
+
+input[type = "text"] , form button{
+    padding: 5px;
+    flex-grow: 1;
+}
+
+.article{
+    /* max-width: 30%; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+    max-height: 500px;
+    /* max-height: auto; */
+}
+
+.title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.description{
+    /* background-color: yellow; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.article img{
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    /* object-position: center; */
+}
+
+
+.loader{
+    width: 70px;
+    height: 70px;
+    border: 7px solid rgb(191, 191, 250);
+    border-radius: 50%;
+    border-top: 7px solid rgb(0, 0, 0) ;
+    animation: load infinite 1s linear;
+}
+
+@keyframes load{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media (max-width: 410px){
+    .article{
+        width: 90%;
+        /* scale: .8; */
+        height: 500px;
+    }
+}
